@@ -1,0 +1,12 @@
+abstract class AbstractFog extends Object3D
+{
+	
+	package net.blimster.gwt.threejs.scenes;
+	
+	constructors:
+		default();
+		(Color color);
+
+	properties:
+		Color color;
+}

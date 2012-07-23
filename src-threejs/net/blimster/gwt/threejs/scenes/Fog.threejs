@@ -1,0 +1,13 @@
+class Fog extends AbstractFog
+{
+	
+	package net.blimster.gwt.threejs.scenes;
+	
+	constructors:
+		default();
+		(Color color, int near, int far);
+		
+	properties:
+		int near;
+		int far;
+}

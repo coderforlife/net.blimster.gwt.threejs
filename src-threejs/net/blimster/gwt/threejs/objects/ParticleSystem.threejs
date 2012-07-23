@@ -1,0 +1,11 @@
+class ParticleSystem extends Object3D
+{
+	
+	package net.blimster.gwt.threejs.objects;
+	
+	constructors:
+		(Geometry geometry, Material material);
+	
+	properties:
+		boolean sortParticles;
+}
