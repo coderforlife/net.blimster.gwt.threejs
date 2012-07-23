@@ -25,7 +25,7 @@ package net.blimster.gwt.threejs.renderers;
 import com.google.gwt.core.client.JavaScriptObject;
 import net.blimster.gwt.threejs.core.Color;
 import net.blimster.gwt.threejs.scenes.Scene;
-import net.blimster.gwt.threejs.renderers.Element;
+import net.blimster.gwt.threejs.other.Element;
 import net.blimster.gwt.threejs.cameras.Camera;
 
 /**
