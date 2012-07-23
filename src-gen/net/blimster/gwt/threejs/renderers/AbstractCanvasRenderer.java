@@ -37,12 +37,5 @@ public abstract class AbstractCanvasRenderer extends Renderer
 	
 		
 	
-	public final native void clear()
-	/*-{
-		
-		this.clear();
-		
-	}-*/;
-	
 	
 }

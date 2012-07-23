@@ -36,6 +36,41 @@ public abstract class Camera extends Object3D
 	}
 	
 		
+	public final native void setAspect(double aspect)
+	/*-{
+		
+		this.aspect = aspect;
+		
+	}-*/;
+	
+	public final native double getAspect()
+	/*-{
+		
+		return this.aspect;
+		
+	}-*/;
+	
+	public final native void setRadius(double radius)
+	/*-{
+		
+		this.radius = radius;
+		
+	}-*/;
+	
+	public final native double getRadius()
+	/*-{
+		
+		return this.radius;
+		
+	}-*/;
+	
+	
+	public final native void updateProjectionMatrix()
+	/*-{
+		
+		this.updateProjectionMatrix();
+		
+	}-*/;
 	
 	
 }

@@ -23,6 +23,7 @@
 package net.blimster.gwt.threejs.core;
 
 import com.google.gwt.core.client.JavaScriptObject;
+import net.blimster.gwt.threejs.core.Color;
 import com.google.gwt.core.client.JsArrayInteger;
 import net.blimster.gwt.threejs.core.Face;
 import net.blimster.gwt.threejs.core.Vector3;
@@ -104,6 +105,20 @@ public abstract class Geometry extends JavaScriptObject
 	/*-{
 		
 		return this.faceVertexUvs;
+		
+	}-*/;
+	
+	public final native void setColors(JsArray<Color> colors)
+	/*-{
+		
+		this.colors = colors;
+		
+	}-*/;
+	
+	public final native JsArray<Color> getColors()
+	/*-{
+		
+		return this.colors;
 		
 	}-*/;
 	

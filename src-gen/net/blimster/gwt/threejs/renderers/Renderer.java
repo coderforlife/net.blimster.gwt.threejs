@@ -25,6 +25,7 @@ package net.blimster.gwt.threejs.renderers;
 import com.google.gwt.core.client.JavaScriptObject;
 import net.blimster.gwt.threejs.core.Color;
 import net.blimster.gwt.threejs.scenes.Scene;
+import net.blimster.gwt.threejs.renderers.Element;
 import net.blimster.gwt.threejs.cameras.Camera;
 
 /**
@@ -39,6 +40,20 @@ public abstract class Renderer extends JavaScriptObject
 	}
 	
 		
+	public final native void setDomElement(Element domElement)
+	/*-{
+		
+		this.domElement = domElement;
+		
+	}-*/;
+	
+	public final native Element getDomElement()
+	/*-{
+		
+		return this.domElement;
+		
+	}-*/;
+	
 	
 	public final native void setSize(int width, int height)
 	/*-{
@@ -58,6 +73,13 @@ public abstract class Renderer extends JavaScriptObject
 	/*-{
 		
 		this.render(scene, camera);
+		
+	}-*/;
+	
+	public final native void clear()
+	/*-{
+		
+		this.clear();
 		
 	}-*/;
 	

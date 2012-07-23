@@ -3,8 +3,6 @@ abstract class AbstractCanvasRenderer extends Renderer
 	
 	package net.blimster.gwt.threejs.renderers;
 	
-	methods:
-		clear();
 		
 	
 }

@@ -23,6 +23,7 @@
 package net.blimster.gwt.threejs.scenes;
 
 import net.blimster.gwt.threejs.core.Object3D;
+import net.blimster.gwt.threejs.scenes.AbstractFog;
 
 /**
  * This file is generated, do not edit.
@@ -46,6 +47,20 @@ public final class Scene extends Object3D
 	
 	
 		
+	public final native void setFog(AbstractFog fog)
+	/*-{
+		
+		this.fog = fog;
+		
+	}-*/;
+	
+	public final native AbstractFog getFog()
+	/*-{
+		
+		return this.fog;
+		
+	}-*/;
+	
 	
 	
 }

@@ -386,6 +386,20 @@ public abstract class Object3D extends JavaScriptObject
 		
 	}-*/;
 	
+	public final native void setParent(Object3D parent)
+	/*-{
+		
+		this.parent = parent;
+		
+	}-*/;
+	
+	public final native Object3D getParent()
+	/*-{
+		
+		return this.parent;
+		
+	}-*/;
+	
 	
 	public final native void translate(double distance, Vector3 axis)
 	/*-{

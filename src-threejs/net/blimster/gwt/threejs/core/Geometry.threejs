@@ -11,6 +11,7 @@ abstract class Geometry
 		Material[] materials;
 		Face[] faces;
 		UV[3] faceVertexUvs;
+		Color[] colors;
 		
 	methods:
 		computeCentroids();

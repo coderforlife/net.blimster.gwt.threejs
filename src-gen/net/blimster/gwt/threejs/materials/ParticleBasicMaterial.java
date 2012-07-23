@@ -36,6 +36,12 @@ public final class ParticleBasicMaterial extends Material
 		super();
 	}
 	
+	public static ParticleBasicMaterialBuilder with()
+	{
+		
+		return ParticleBasicMaterialBuilder.create();
+		
+	}
 	
 	
 	
@@ -47,6 +53,20 @@ public final class ParticleBasicMaterial extends Material
 		
 	}-*/;
 	
+	
+	public final native void setColor(Color color)
+	/*-{
+		
+		this.color = color;
+		
+	}-*/;
+	
+	public final native Color getColor()
+	/*-{
+		
+		return this.color;
+		
+	}-*/;
 	
 	
 	
