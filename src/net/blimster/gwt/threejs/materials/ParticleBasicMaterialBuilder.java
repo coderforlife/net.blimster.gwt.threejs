@@ -48,7 +48,7 @@ public final class ParticleBasicMaterialBuilder extends JavaScriptObject
     /*-{
 
 		this['size'] = size;
-		return this;
+		return this; 
 
     }-*/;
 
