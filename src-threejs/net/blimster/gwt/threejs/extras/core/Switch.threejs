@@ -1,0 +1,12 @@
+class Switch extends Object3D
+{
+	
+	package net.blimster.gwt.threejs.objects;
+	
+	constructors:
+		(Object3D[] children, Object3D selected);
+
+	methods:
+		select(Object3D child);
+	
+}
