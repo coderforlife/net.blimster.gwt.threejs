@@ -450,6 +450,13 @@ public abstract class Object3D extends JavaScriptObject
 		
 	}-*/;
 	
+	public final native void clear()
+	/*-{
+		
+		this.clear();
+		
+	}-*/;
+	
 	public final native Object3D getChildByName(String name, boolean doRecurse)
 	/*-{
 		
