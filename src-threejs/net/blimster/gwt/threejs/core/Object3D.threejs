@@ -41,6 +41,7 @@ abstract class Object3D
 		lookAt(Vector3 vector);
 		add(Object3D object);
 		remove(Object3D object);
+		clear();
 		Object3D getChildByName(string name, boolean doRecurse);
 		updateMatrix();
 		updateMatrixWorld(boolean force);
