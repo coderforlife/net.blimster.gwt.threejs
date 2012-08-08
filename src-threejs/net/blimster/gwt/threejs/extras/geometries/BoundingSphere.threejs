@@ -1,0 +1,9 @@
+class BoundingSphere
+{
+	
+	package net.blimster.gwt.threejs.extras.geometries;
+	
+	properties:
+		float radius;
+	
+}

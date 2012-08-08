@@ -26,6 +26,7 @@ import com.google.gwt.core.client.JavaScriptObject;
 import net.blimster.gwt.threejs.core.Color;
 import com.google.gwt.core.client.JsArrayInteger;
 import net.blimster.gwt.threejs.core.Face;
+import net.blimster.gwt.threejs.extras.geometries.BoundingSphere;
 import net.blimster.gwt.threejs.core.Vector3;
 import com.google.gwt.core.client.JsArray;import net.blimster.gwt.threejs.core.UV;
 import net.blimster.gwt.threejs.materials.Material;
@@ -119,6 +120,20 @@ public abstract class Geometry extends JavaScriptObject
 	/*-{
 		
 		return this.colors;
+		
+	}-*/;
+	
+	public final native void setBoundingSphere(BoundingSphere boundingSphere)
+	/*-{
+		
+		this.boundingSphere = boundingSphere;
+		
+	}-*/;
+	
+	public final native BoundingSphere getBoundingSphere()
+	/*-{
+		
+		return this.boundingSphere;
 		
 	}-*/;
 	

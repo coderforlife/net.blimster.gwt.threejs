@@ -20,37 +20,22 @@
  * mail: oliver [dot] damm [at] gmx [dot] de
  * web: http://www.blimster.net 
  */
-package net.blimster.gwt.threejs.textures;
+package net.blimster.gwt.threejs.other;
 
 import com.google.gwt.core.client.JavaScriptObject;
-import net.blimster.gwt.threejs.other.Image;
 
 /**
  * This file is generated, do not edit.
  */
-public final class Texture extends JavaScriptObject
+public abstract class Image extends JavaScriptObject
 {
 	
-	protected Texture()
+	protected Image()
 	{
 		super();
 	}
 	
 		
-	public final native void setImage(Image image)
-	/*-{
-		
-		this.image = image;
-		
-	}-*/;
-	
-	public final native Image getImage()
-	/*-{
-		
-		return this.image;
-		
-	}-*/;
-	
 	
 	
 }

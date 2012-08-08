@@ -20,34 +20,33 @@
  * mail: oliver [dot] damm [at] gmx [dot] de
  * web: http://www.blimster.net 
  */
-package net.blimster.gwt.threejs.textures;
+package net.blimster.gwt.threejs.extras.geometries;
 
 import com.google.gwt.core.client.JavaScriptObject;
-import net.blimster.gwt.threejs.other.Image;
 
 /**
  * This file is generated, do not edit.
  */
-public final class Texture extends JavaScriptObject
+public final class BoundingSphere extends JavaScriptObject
 {
 	
-	protected Texture()
+	protected BoundingSphere()
 	{
 		super();
 	}
 	
 		
-	public final native void setImage(Image image)
+	public final native void setRadius(double radius)
 	/*-{
 		
-		this.image = image;
+		this.radius = radius;
 		
 	}-*/;
 	
-	public final native Image getImage()
+	public final native double getRadius()
 	/*-{
 		
-		return this.image;
+		return this.radius;
 		
 	}-*/;
 	
