@@ -1,0 +1,17 @@
+class SceneUtils
+{
+	
+	package net.blimster.gwt.threejs.extras;
+	
+	methods:
+		showHierarchy(Object3D root, boolean visible);
+		Object3D createMultiMaterialObject(Geometry geometry, Material[] materials);
+		attach(Object3D child, Scene scene, Object3D parent);
+		detach(Object3D child, Object3D parent, Scene scene);
+	
+		Mesh cloneObject(Mesh source);
+		Line cloneObject(Line source);
+		Particle cloneObject(Particle source);
+		Object3D cloneObject(Object3D source);
+	
+}
