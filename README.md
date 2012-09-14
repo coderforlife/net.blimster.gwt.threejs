@@ -32,6 +32,11 @@ Example for GWT module file:
 </module>
 ```
 
+three4g needs the minified library of three.js to be included in your host page. An API compatible version is provided with this project. You can also download the newest [three.min.js](http://mrdoob.github.com/three.js/build/three.min.js) from Gihub.
+
+**Note: In order to support the GWT 2.5 Super Dev Mode, the three.min.js is no longer included in threejs.gwt.xml using the <script> Tag. You have to include it in your host page directly.**
+
+
 ### Use three4g classes in your entry point class
 
 ```java
