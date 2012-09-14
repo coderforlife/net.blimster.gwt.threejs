@@ -9,6 +9,7 @@ abstract class Object3D
 	properties:
 		string name;
 		int id;
+		readonly Object3D[] children;
 		Vector3 up;
 		Vector3 position;
 		Vector3 rotation;
