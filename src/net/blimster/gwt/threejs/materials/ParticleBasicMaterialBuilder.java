@@ -3,7 +3,6 @@
  */
 package net.blimster.gwt.threejs.materials;
 
-import net.blimster.gwt.threejs.textures.CombineOperation;
 import net.blimster.gwt.threejs.textures.Texture;
 
 import com.google.gwt.core.client.JavaScriptObject;

@@ -36,21 +36,25 @@ public final class WebGLRenderer extends AbstractWebGLRenderer
 
     protected WebGLRenderer()
     {
-	super();
+    	super();
     }
 
     public static WebGLRenderer create(Canvas canvas)
     {
-
-	return WebGLRenderer.create(canvas.getCanvasElement());
-
+    	return WebGLRenderer.create(canvas.getCanvasElement(), false);
     }
 
-    private native static WebGLRenderer create(CanvasElement canvasElement)
+    public static WebGLRenderer create(Canvas canvas, boolean antialias)
+    {
+    	return WebGLRenderer.create(canvas.getCanvasElement(), antialias);
+    }
+
+    private native static WebGLRenderer create(CanvasElement canvasElement, boolean _antialias)
     /*-{
 
 		return new $wnd.THREE.WebGLRenderer( {
-			canvas : canvasElement
+			canvas : canvasElement,
+			antialias : _antialias,
 		});
 
     }-*/;

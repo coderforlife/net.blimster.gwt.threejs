@@ -27,10 +27,10 @@ import net.blimster.gwt.threejs.cameras.Camera;
 /**
  * This file is generated, do not edit.
  */
-public final class PerspectiveCamera extends Camera
+public final class OrthographicCamera extends Camera
 {
 	
-	protected PerspectiveCamera()
+	protected OrthographicCamera()
 	{
 		super();
 	}
@@ -39,39 +39,67 @@ public final class PerspectiveCamera extends Camera
 	
 	
 	
-	public static native PerspectiveCamera create(double fov, double aspect, double near, double far)
+	public static native OrthographicCamera create(double left, double right, double top, double bottom, double near, double far)
 	/*-{
 		
-		return new $wnd.THREE.PerspectiveCamera(fov, aspect, near, far);
+		return new $wnd.THREE.OrthographicCamera(left, right, top, bottom, near, far);
 		
 	}-*/;
 	
 	
-	public final native void setFov(double fov)
+	public final native void setLeft(double left)
 	/*-{
 		
-		this.fov = fov;
+		this.left = left;
 		
 	}-*/;
 	
-	public final native double getFov()
+	public final native double getLeft()
 	/*-{
 		
-		return this.fov;
+		return this.left;
 		
 	}-*/;
 	
-	public final native void setAspect(double aspect)
+	public final native void setRight(double right)
 	/*-{
 		
-		this.aspect = aspect;
+		this.right = right;
 		
 	}-*/;
 	
-	public final native double getAspect()
+	public final native double getRight()
 	/*-{
 		
-		return this.aspect;
+		return this.right;
+		
+	}-*/;
+	
+	public final native void setTop(double top)
+	/*-{
+		
+		this.top = top;
+		
+	}-*/;
+	
+	public final native double getTop()
+	/*-{
+		
+		return this.top;
+		
+	}-*/;
+	
+	public final native void setBottom(double bottom)
+	/*-{
+		
+		this.bottom = bottom;
+		
+	}-*/;
+	
+	public final native double getBottom()
+	/*-{
+		
+		return this.bottom;
 		
 	}-*/;
 	
@@ -103,20 +131,6 @@ public final class PerspectiveCamera extends Camera
 		
 	}-*/;
 	
-	
-	public final native void setLens(double focalLength, double frameSize)
-	/*-{
-		
-		this.setLens(focalLength, frameSize);
-		
-	}-*/;
-	
-	public final native void setViewOffset(double fullWidth, double fullHeight, double x, double y, double width, double height)
-	/*-{
-		
-		this.setViewOffset(fullWidth, fullHeight, x, y, width, height);
-		
-	}-*/;
 	
 	public final native void updateProjectionMatrix()
 	/*-{

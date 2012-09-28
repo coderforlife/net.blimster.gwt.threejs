@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module>
-<!--   <public path="web"/> -->
-	<script src='Three.js'/>
+	<script src='http://mrdoob.github.com/three.js/build/three.min.js'/>
 	<source path='threejs'/>
 	<source path='threejsx'/>
 </module>

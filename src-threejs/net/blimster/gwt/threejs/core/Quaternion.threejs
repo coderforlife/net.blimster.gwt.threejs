@@ -3,4 +3,28 @@ class Quaternion
 	
 	package net.blimster.gwt.threejs.core;
 	
+	constructors:
+		default();
+		(float x, float y, float z, float w);
+	
+	properties:
+		float x;
+		float y;
+		float z;
+		float w;
+
+	methods:
+		Quaternion set(float x, float y, float z, float w);
+		Quaternion copy(Quaternion q);
+		Quaternion clone();
+		Quaternion setFromEuler(Vector3 vector);
+		Quaternion setFromAxisAngle(Vector3 axis, float angle);
+		Quaternion setFromRotationMatrix(Matrix4 m);
+		Quaternion calculateW();
+		Quaternion inverse();
+		float length();
+		Quaternion normalize();
+		Quaternion multiply(Quaternion a, Quaternion b);
+		Quaternion multiplySelf(Quaternion b);
+		Quaternion multiplyVector3(Vector3 vector, Vector3 dest);
 }

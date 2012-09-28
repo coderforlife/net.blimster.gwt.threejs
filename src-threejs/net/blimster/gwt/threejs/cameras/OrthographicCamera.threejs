@@ -1,0 +1,18 @@
+class OrthographicCamera extends Camera
+{
+	package net.blimster.gwt.threejs.cameras;
+	
+	constructors:
+		(float left, float right, float top, float bottom, float near, float far);
+
+	properties:
+		float left;
+		float right;
+		float top;
+		float bottom;
+		float near;
+		float far;
+
+	methods:
+		updateProjectionMatrix();
+}
