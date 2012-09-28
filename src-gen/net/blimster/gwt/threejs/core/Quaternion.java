@@ -23,6 +23,7 @@
 package net.blimster.gwt.threejs.core;
 
 import com.google.gwt.core.client.JavaScriptObject;
+import net.blimster.gwt.threejs.core.Vector4;
 import net.blimster.gwt.threejs.core.Quaternion;
 import net.blimster.gwt.threejs.core.Matrix4;
 import net.blimster.gwt.threejs.core.Vector3;
@@ -204,13 +205,12 @@ public final class Quaternion extends JavaScriptObject
 		
 	}-*/;
 	
-		
 	public final native Quaternion slerpSelf(Vector4 qb, double t)
 	/*-{
 		
 		return this.slerpSelf(qb, t);
 		
 	}-*/;
-
-
+	
+	
 }

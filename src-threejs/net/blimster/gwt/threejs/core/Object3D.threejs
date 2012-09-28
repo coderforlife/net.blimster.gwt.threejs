@@ -34,7 +34,6 @@ abstract class Object3D
 		boolean frustumCulled;
 		Object3D parent;
 		UserObject userData;
-		Object3D[] children;
 
 	methods:
 		translate(float distance, Vector3 axis);
