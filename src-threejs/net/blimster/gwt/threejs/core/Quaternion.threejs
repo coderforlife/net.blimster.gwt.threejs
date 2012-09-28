@@ -27,4 +27,5 @@ class Quaternion
 		Quaternion multiply(Quaternion a, Quaternion b);
 		Quaternion multiplySelf(Quaternion b);
 		Quaternion multiplyVector3(Vector3 vector, Vector3 dest);
+		Quaternion slerpSelf(Vector4 qb, float t);
 }

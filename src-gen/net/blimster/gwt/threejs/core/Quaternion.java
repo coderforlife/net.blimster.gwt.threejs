@@ -204,5 +204,13 @@ public final class Quaternion extends JavaScriptObject
 		
 	}-*/;
 	
-	
+		
+	public final native Quaternion slerpSelf(Vector4 qb, double t)
+	/*-{
+		
+		return this.slerpSelf(qb, t);
+		
+	}-*/;
+
+
 }

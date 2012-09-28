@@ -25,6 +25,7 @@ package net.blimster.gwt.threejs.core;
 import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.core.client.JsArrayInteger;
 import net.blimster.gwt.threejs.core.Quaternion;
+import com.google.gwt.core.client.JsArrayInteger;
 import net.blimster.gwt.threejs.core.Matrix4;
 import net.blimster.gwt.threejs.core.UserObject;
 import net.blimster.gwt.threejs.core.Object3D;
@@ -78,6 +79,14 @@ public abstract class Object3D extends JavaScriptObject
 	/*-{
 		
 		return this.id;
+		
+	}-*/;
+	
+	
+	public final native JsArray<Object3D> getChildren()
+	/*-{
+		
+		return this.children;
 		
 	}-*/;
 	
