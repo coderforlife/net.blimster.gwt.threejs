@@ -2,10 +2,14 @@ abstract class Renderer
 {
 	
 	package net.blimster.gwt.threejs.renderers;
-	
+
+	properties:
+		Element domElement;
+			
 	methods:
 		setSize(int width, int height);
     	setClearColor(Color color, float opacity);
     	render(Scene scene, Camera camera);
+    	clear();
 	
 }

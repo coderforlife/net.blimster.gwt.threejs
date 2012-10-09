@@ -1,17 +1,17 @@
 /*
  *
  * This file is part of three4g.
-         *
+ *
  * three4g is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesse General Public License as 
  * published by the Free Software Foundation, either version 3 of 
  * the License, or (at your option) any later version.
-         *
+ *
  * three4g is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU Lesser General Public License for more details.
-         *
+ *
  * You should have received a copy of the GNU Lesser General Public 
  * License along with three4g. If not, see <http://www.gnu.org/licenses/>.
  *
@@ -22,6 +22,7 @@
  */
 package net.blimster.gwt.threejs.cameras;
 
+import net.blimster.gwt.threejs.core.Matrix4;
 import net.blimster.gwt.threejs.core.Object3D;
 
 /**
@@ -36,6 +37,48 @@ public abstract class Camera extends Object3D
 	}
 	
 		
+	public final native void setMatrixWorldInverse(Matrix4 matrixWorldInverse)
+	/*-{
+		
+		this.matrixWorldInverse = matrixWorldInverse;
+		
+	}-*/;
+	
+	public final native Matrix4 getMatrixWorldInverse()
+	/*-{
+		
+		return this.matrixWorldInverse;
+		
+	}-*/;
+	
+	public final native void setProjectionMatrix(Matrix4 projectionMatrix)
+	/*-{
+		
+		this.projectionMatrix = projectionMatrix;
+		
+	}-*/;
+	
+	public final native Matrix4 getProjectionMatrix()
+	/*-{
+		
+		return this.projectionMatrix;
+		
+	}-*/;
+	
+	public final native void setProjectionMatrixInverse(Matrix4 projectionMatrixInverse)
+	/*-{
+		
+		this.projectionMatrixInverse = projectionMatrixInverse;
+		
+	}-*/;
+	
+	public final native Matrix4 getProjectionMatrixInverse()
+	/*-{
+		
+		return this.projectionMatrixInverse;
+		
+	}-*/;
+	
 	
 	
 }

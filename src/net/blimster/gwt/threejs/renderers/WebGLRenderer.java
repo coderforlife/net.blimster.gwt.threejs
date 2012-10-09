@@ -22,6 +22,9 @@
  */
 package net.blimster.gwt.threejs.renderers;
 
+import net.blimster.gwt.threejs.core.Object3D;
+import net.blimster.gwt.threejs.scenes.Scene;
+
 import com.google.gwt.canvas.client.Canvas;
 import com.google.gwt.dom.client.CanvasElement;
 
@@ -33,22 +36,40 @@ public final class WebGLRenderer extends AbstractWebGLRenderer
 
     protected WebGLRenderer()
     {
-	super();
+    	super();
     }
 
     public static WebGLRenderer create(Canvas canvas)
     {
-
-	return WebGLRenderer.create(canvas.getCanvasElement());
-
+    	return WebGLRenderer.create(canvas.getCanvasElement(), false);
     }
 
-    private native static WebGLRenderer create(CanvasElement canvasElement)
+    public static WebGLRenderer create(Canvas canvas, boolean antialias)
+    {
+    	return WebGLRenderer.create(canvas.getCanvasElement(), antialias);
+    }
+
+    private native static WebGLRenderer create(CanvasElement canvasElement, boolean _antialias)
     /*-{
 
 		return new $wnd.THREE.WebGLRenderer( {
-			canvas : canvasElement
+			canvas : canvasElement,
+			antialias : _antialias,
 		});
+
+    }-*/;
+
+    public native void initWebGLObjects(Scene scene)
+    /*-{
+
+		this.initWebGLObjects(scene);
+
+    }-*/;
+
+    public native void deallocateObject(Object3D obj)
+    /*-{
+
+		this.deallocateObject(obj);
 
     }-*/;
 

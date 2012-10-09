@@ -40,6 +40,12 @@ public final class Quaternion extends JavaScriptObject
 	}
 	
 	
+	public static native Quaternion create()
+	/*-{
+		
+		return new $wnd.THREE.Quaternion();
+		
+	}-*/;
 	
 	
 	
@@ -50,6 +56,62 @@ public final class Quaternion extends JavaScriptObject
 		
 	}-*/;
 	
+	
+	public final native void setX(double x)
+	/*-{
+		
+		this.x = x;
+		
+	}-*/;
+	
+	public final native double getX()
+	/*-{
+		
+		return this.x;
+		
+	}-*/;
+	
+	public final native void setY(double y)
+	/*-{
+		
+		this.y = y;
+		
+	}-*/;
+	
+	public final native double getY()
+	/*-{
+		
+		return this.y;
+		
+	}-*/;
+	
+	public final native void setZ(double z)
+	/*-{
+		
+		this.z = z;
+		
+	}-*/;
+	
+	public final native double getZ()
+	/*-{
+		
+		return this.z;
+		
+	}-*/;
+	
+	public final native void setW(double w)
+	/*-{
+		
+		this.w = w;
+		
+	}-*/;
+	
+	public final native double getW()
+	/*-{
+		
+		return this.w;
+		
+	}-*/;
 	
 	
 	public final native Quaternion set(double x, double y, double z, double w)
@@ -66,10 +128,17 @@ public final class Quaternion extends JavaScriptObject
 		
 	}-*/;
 	
-	public final native Quaternion setFromEuler(Vector3 v, String order)
+	public final native Quaternion clone()
 	/*-{
 		
-		return this.setFromEuler(v, order);
+		return this.clone();
+		
+	}-*/;
+	
+	public final native Quaternion setFromEuler(Vector3 vector)
+	/*-{
+		
+		return this.setFromEuler(vector);
 		
 	}-*/;
 	
@@ -115,21 +184,21 @@ public final class Quaternion extends JavaScriptObject
 		
 	}-*/;
 	
-	public final native Quaternion multiply(Vector4 a, Vector4 b)
+	public final native Quaternion multiply(Quaternion a, Quaternion b)
 	/*-{
 		
 		return this.multiply(a, b);
 		
 	}-*/;
 	
-	public final native Quaternion multiplySelf(Vector4 b)
+	public final native Quaternion multiplySelf(Quaternion b)
 	/*-{
 		
 		return this.multiplySelf(b);
 		
 	}-*/;
 	
-	public final native Vector3 multiplyVector3(Vector3 vector, Vector3 dest)
+	public final native Quaternion multiplyVector3(Vector3 vector, Vector3 dest)
 	/*-{
 		
 		return this.multiplyVector3(vector, dest);
@@ -140,13 +209,6 @@ public final class Quaternion extends JavaScriptObject
 	/*-{
 		
 		return this.slerpSelf(qb, t);
-		
-	}-*/;
-	
-	public final native Quaternion clone()
-	/*-{
-		
-		return this.clone();
 		
 	}-*/;
 	

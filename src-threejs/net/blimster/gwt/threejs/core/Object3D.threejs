@@ -32,6 +32,8 @@ abstract class Object3D
 		boolean castShadow;
 		boolean receiveShadow;
 		boolean frustumCulled;
+		Object3D parent;
+		UserObject userData;
 
 	methods:
 		translate(float distance, Vector3 axis);

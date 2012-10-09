@@ -1,0 +1,12 @@
+class Screen 
+{
+
+	package net.blimster.gwt.threejs.extras.controls;
+
+	constructors:
+		default();
+	
+	properties:
+		float width;
+		float height;
+}

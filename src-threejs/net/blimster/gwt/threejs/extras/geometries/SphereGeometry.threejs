@@ -5,5 +5,5 @@ class SphereGeometry extends Geometry
 	
 	constructors:
 		(float radius, int segmentsWidth, int segmentsHeight);
-	
+		
 }

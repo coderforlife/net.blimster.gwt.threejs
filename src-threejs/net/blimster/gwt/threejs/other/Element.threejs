@@ -1,0 +1,6 @@
+abstract class Element
+{
+	
+	package net.blimster.gwt.threejs.other;
+
+}

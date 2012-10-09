@@ -1,0 +1,12 @@
+class FogExp2 extends AbstractFog
+{
+	
+	package net.blimster.gwt.threejs.scenes;
+	
+	constructors:
+		default();
+		(Color color, float density);
+
+	properties:
+		float density;
+}

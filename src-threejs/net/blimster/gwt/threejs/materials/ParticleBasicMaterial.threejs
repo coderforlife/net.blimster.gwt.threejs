@@ -2,8 +2,13 @@ class ParticleBasicMaterial extends Material
 {
 
 	package net.blimster.gwt.threejs.materials;
-	
+
 	constructors:
+		builder();
 		(float size, Color color) json;
+	
+	properties:
+		Color color;
+	
 
 }

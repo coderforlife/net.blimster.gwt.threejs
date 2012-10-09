@@ -1,0 +1,5 @@
+abstract class UserObject
+{
+
+	package net.blimster.gwt.threejs.core;
+}

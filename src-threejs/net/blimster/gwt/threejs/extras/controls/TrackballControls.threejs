@@ -1,0 +1,35 @@
+class TrackballControls 
+{
+
+	package net.blimster.gwt.threejs.extras.controls;
+
+	constructors:
+		(Object3D target, Element domElement) json;
+	
+	properties:
+		boolean enabled;
+	
+		int radius;
+	
+		float rotateSpeed;
+		float zoomSpeed;
+		float panSpeed;
+		Object3D target;
+		
+		boolean noRotate;
+		boolean noZoom;
+		boolean noPan;
+	
+		boolean staticMoving;
+		float dynamicDampingFactor;
+	
+		float  minDistance;
+		float maxDistance;
+	
+		Screen screen;
+		int[] keys;
+
+			
+	methods:
+		update();		
+}
