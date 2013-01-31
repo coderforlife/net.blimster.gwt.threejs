@@ -1,7 +1,7 @@
 class Quaternion
 {
 	
-	package net.blimster.gwt.threejs.core;
+	package net.blimster.gwt.threejs.math;
 	
 	constructors:
 		default();
@@ -15,6 +15,8 @@ class Quaternion
 
 	methods:
 		Quaternion set(float x, float y, float z, float w);
+		setComponent(int index, float val);
+		float getComponent(int index);
 		Quaternion copy(Quaternion q);
 		Quaternion clone();
 		Quaternion setFromEuler(Vector3 vector);
@@ -24,8 +26,7 @@ class Quaternion
 		Quaternion inverse();
 		float length();
 		Quaternion normalize();
-		Quaternion multiply(Quaternion a, Quaternion b);
-		Quaternion multiplySelf(Quaternion b);
-		Quaternion multiplyVector3(Vector3 vector, Vector3 dest);
+		Quaternion multiply(Quaternion q);
+		Quaternion multiplyMatrices(Quaternion q1, Quaternion q2);
 		Quaternion slerpSelf(Vector4 qb, float t);
 }

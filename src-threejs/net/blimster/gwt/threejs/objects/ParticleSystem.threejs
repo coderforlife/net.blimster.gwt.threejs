@@ -6,6 +6,11 @@ class ParticleSystem extends Object3D
 	constructors:
 		(Geometry geometry, Material material);
 	
+		
 	properties:
 		boolean sortParticles;
+		
+	methods:
+		ParticleSystem clone();
+		
 }

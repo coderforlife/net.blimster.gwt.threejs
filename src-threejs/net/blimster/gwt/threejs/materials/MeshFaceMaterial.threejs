@@ -4,6 +4,6 @@ class MeshFaceMaterial extends Material
 	package net.blimster.gwt.threejs.materials;
 	
 	constructors:
-		default();
+		(Material[] materials);
 	
 }

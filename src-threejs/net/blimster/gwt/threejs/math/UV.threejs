@@ -1,7 +1,7 @@
 class UV
 {
 	
-	package net.blimster.gwt.threejs.core;
+	package net.blimster.gwt.threejs.math;
 	
 	constructors:
 		default();

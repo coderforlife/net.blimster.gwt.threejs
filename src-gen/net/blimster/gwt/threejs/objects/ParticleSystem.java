@@ -22,6 +22,7 @@
  */
 package net.blimster.gwt.threejs.objects;
 
+import net.blimster.gwt.threejs.objects.ParticleSystem;
 import net.blimster.gwt.threejs.core.Geometry;
 import net.blimster.gwt.threejs.core.Object3D;
 import net.blimster.gwt.threejs.materials.Material;
@@ -63,6 +64,13 @@ public final class ParticleSystem extends Object3D
 		
 	}-*/;
 	
+	
+	public final native ParticleSystem clone()
+	/*-{
+		
+		return this.clone();
+		
+	}-*/;
 	
 	
 }

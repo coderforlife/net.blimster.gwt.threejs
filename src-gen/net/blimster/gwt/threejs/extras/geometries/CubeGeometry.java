@@ -22,9 +22,7 @@
  */
 package net.blimster.gwt.threejs.extras.geometries;
 
-import com.google.gwt.core.client.JsArrayInteger;
 import net.blimster.gwt.threejs.core.Geometry;
-import com.google.gwt.core.client.JsArray;import net.blimster.gwt.threejs.materials.Material;
 
 /**
  * This file is generated, do not edit.
@@ -48,10 +46,10 @@ public final class CubeGeometry extends Geometry
 		
 	}-*/;
 	
-public static native CubeGeometry create(double width, double height, double depth, int segmentsWidth, int segmentsHeight, int segmentsDepth, JsArray<Material> materials)
+public static native CubeGeometry create(double width, double height, double depth, int widthSegments, int heightSegments, int depthSegments)
 	/*-{
 		
-		return new $wnd.THREE.CubeGeometry(width, height, depth, segmentsWidth, segmentsHeight, segmentsDepth, materials);
+		return new $wnd.THREE.CubeGeometry(width, height, depth, widthSegments, heightSegments, depthSegments);
 		
 	}-*/;
 	

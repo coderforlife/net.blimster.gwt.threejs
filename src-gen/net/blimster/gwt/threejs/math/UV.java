@@ -20,65 +20,96 @@
  * mail: oliver [dot] damm [at] gmx [dot] de
  * web: http://www.blimster.net 
  */
-package net.blimster.gwt.threejs.cameras;
+package net.blimster.gwt.threejs.math;
 
-import net.blimster.gwt.threejs.math.Matrix4;
-import net.blimster.gwt.threejs.core.Object3D;
+import com.google.gwt.core.client.JavaScriptObject;
+import net.blimster.gwt.threejs.math.UV;
 
 /**
  * This file is generated, do not edit.
  */
-public abstract class Camera extends Object3D
+public final class UV extends JavaScriptObject
 {
 	
-	protected Camera()
+	protected UV()
 	{
 		super();
 	}
 	
-		
-	public final native void setMatrixWorldInverse(Matrix4 matrixWorldInverse)
+	
+	public static native UV create()
 	/*-{
 		
-		this.matrixWorldInverse = matrixWorldInverse;
+		return new $wnd.THREE.UV();
 		
 	}-*/;
 	
-	public final native Matrix4 getMatrixWorldInverse()
+	
+	
+	public static native UV create(double u, double v)
 	/*-{
 		
-		return this.matrixWorldInverse;
+		return new $wnd.THREE.UV(u, v);
 		
 	}-*/;
 	
-	public final native void setProjectionMatrix(Matrix4 projectionMatrix)
+	
+	public final native void setU(double u)
 	/*-{
 		
-		this.projectionMatrix = projectionMatrix;
+		this.u = u;
 		
 	}-*/;
 	
-	public final native Matrix4 getProjectionMatrix()
+	public final native double getU()
 	/*-{
 		
-		return this.projectionMatrix;
+		return this.u;
 		
 	}-*/;
 	
-	public final native void setProjectionMatrixInverse(Matrix4 projectionMatrixInverse)
+	public final native void setV(double v)
 	/*-{
 		
-		this.projectionMatrixInverse = projectionMatrixInverse;
+		this.v = v;
 		
 	}-*/;
 	
-	public final native Matrix4 getProjectionMatrixInverse()
+	public final native double getV()
 	/*-{
 		
-		return this.projectionMatrixInverse;
+		return this.v;
 		
 	}-*/;
 	
+	
+	public final native UV set(double u, double v)
+	/*-{
+		
+		return this.set(u, v);
+		
+	}-*/;
+	
+	public final native UV copy(UV uv)
+	/*-{
+		
+		return this.copy(uv);
+		
+	}-*/;
+	
+	public final native UV lerpSelf(UV uv, double alpha)
+	/*-{
+		
+		return this.lerpSelf(uv, alpha);
+		
+	}-*/;
+	
+	public final native UV clone()
+	/*-{
+		
+		return this.clone();
+		
+	}-*/;
 	
 	
 }

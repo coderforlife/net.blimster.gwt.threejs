@@ -22,7 +22,7 @@
  */
 package net.blimster.gwt.threejsx.extras.geometries;
 
-import net.blimster.gwt.threejs.core.Vector2;
+import net.blimster.gwt.threejs.math.Vector2;
 
 /**
  * @author Oliver Damm

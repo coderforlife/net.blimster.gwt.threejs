@@ -22,7 +22,8 @@
  */
 package net.blimster.gwt.threejs.scenes;
 
-import net.blimster.gwt.threejs.core.Color;
+import net.blimster.gwt.threejs.math.Color;
+import net.blimster.gwt.threejs.scenes.FogExp2;
 import net.blimster.gwt.threejs.scenes.AbstractFog;
 
 /**
@@ -68,6 +69,13 @@ public final class FogExp2 extends AbstractFog
 		
 	}-*/;
 	
+	
+	public final native FogExp2 clone()
+	/*-{
+		
+		return this.clone();
+		
+	}-*/;
 	
 	
 }

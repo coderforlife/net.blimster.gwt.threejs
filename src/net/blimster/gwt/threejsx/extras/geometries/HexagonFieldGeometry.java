@@ -24,8 +24,8 @@ package net.blimster.gwt.threejsx.extras.geometries;
 
 import net.blimster.gwt.threejs.core.Face3;
 import net.blimster.gwt.threejs.core.Geometry;
-import net.blimster.gwt.threejs.core.Vector2;
-import net.blimster.gwt.threejs.core.Vector3;
+import net.blimster.gwt.threejs.math.Vector2;
+import net.blimster.gwt.threejs.math.Vector3;
 
 import com.google.gwt.core.client.JsArray;
 
@@ -115,7 +115,7 @@ public final class HexagonFieldGeometry extends Geometry
 		Vector3 normal = Vector3.create();
 		for (int i = 0; i < 4; i++)
 		{
-		    normal.addSelf(geometry.getFaces().get((y * hexagonsY + x) * 4 + i).getNormal());
+		    normal.add(geometry.getFaces().get((y * hexagonsY + x) * 4 + i).getNormal());
 		}
 		normal.normalize();
 		for (int i = 0; i < 4; i++)

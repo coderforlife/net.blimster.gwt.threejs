@@ -39,10 +39,10 @@ public final class PlaneGeometry extends Geometry
 	
 	
 	
-	public static native PlaneGeometry create(double width, double height)
+	public static native PlaneGeometry create(double width, double height, int widthSegments, int heightSegments)
 	/*-{
 		
-		return new $wnd.THREE.PlaneGeometry(width, height);
+		return new $wnd.THREE.PlaneGeometry(width, height, widthSegments, heightSegments);
 		
 	}-*/;
 	

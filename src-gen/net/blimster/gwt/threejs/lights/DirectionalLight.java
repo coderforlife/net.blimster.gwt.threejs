@@ -39,10 +39,10 @@ public final class DirectionalLight extends Light
 	
 	
 	
-	public static native DirectionalLight create(int hex)
+	public static native DirectionalLight create(int hex, double intensity, double distance)
 	/*-{
 		
-		return new $wnd.THREE.DirectionalLight(hex);
+		return new $wnd.THREE.DirectionalLight(hex, intensity, distance);
 		
 	}-*/;
 	

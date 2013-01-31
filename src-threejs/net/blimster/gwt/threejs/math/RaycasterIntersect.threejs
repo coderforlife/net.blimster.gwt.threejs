@@ -1,0 +1,17 @@
+class RaycasterIntersect
+{
+	
+	package net.blimster.gwt.threejs.math;
+	
+	constructors:
+
+	properties:
+		float distance;
+		Vector3 point;
+		Face face;
+		int faceIndex;
+		Object3D object;
+		
+	methods:
+	
+}

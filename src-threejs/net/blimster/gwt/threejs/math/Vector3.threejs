@@ -1,7 +1,7 @@
 class Vector3
 {
 		
-	package net.blimster.gwt.threejs.core;
+	package net.blimster.gwt.threejs.math;
 	
 	constructors:
 		default();
@@ -14,15 +14,17 @@ class Vector3
 		
 	methods:
 		Vector3 set(float x, float y, float z);
+		setComponent(int index, float val);
+		float getComponent(int index);
 		Vector3 copy(Vector3 v);
 		Vector3 clone();
-		Vector3 add(Vector3 v1, Vector3 v2);
-		Vector3 addSelf(Vector3 v);
+		Vector3 add(Vector3 v);
+		Vector3 addVectors(Vector3 v1, Vector3 v2);
 		Vector3 addScalar(float s);
-		Vector3 sub(Vector3 v1, Vector3 v2);
-		Vector3 subSelf(Vector3 v);
-		Vector3 multiply(Vector3 v1, Vector3 v2);
-		Vector3 multiplySelf(Vector3 v);
+		Vector3 sub(Vector3 v);
+		Vector3 subVectors(Vector3 v1, Vector3 v2);
+		Vector3 multiply(Vector3 v);
+		Vector3 multiplyVectors(Vector3 v1, Vector3 v2);
 		Vector3 multiplyScalar(float s);
 		Vector3 divideSelf(Vector3 v);
 		Vector3 divideScalar(float s);
@@ -33,9 +35,9 @@ class Vector3
 		float lengthManhattan();
 		Vector3 normalize();
 		Vector3 setLength(float l);
-		Vector3 lerpSelf(Vector3 v, float alpha);
-		Vector3 cross(Vector3 v1, Vector3 v2);
-		Vector3 crossSelf(Vector3 v);
+		Vector3 lerp(Vector3 v, float alpha);
+		Vector3 cross(Vector3 v);
+		Vector3 crossVectors(Vector3 v1, Vector3 v2);
 		float distanceTo(Vector3 vector);
 		float distanceToSquared(Vector3 vector);
 		Vector3 getPositionFromMatrix(Matrix4 m);
@@ -43,5 +45,13 @@ class Vector3
 		Vector3 getScaleFromMatrix(Matrix4 m);
 		boolean equals(Vector3 v);
 		boolean isZero();
+		Vector3 applyMatrix4(Matrix4 m);
+		Vector3 applyProjection(Matrix4 m);
+		Vector3 applyQuaternion(Quaternion m);
+		Vector3 applyAxisAngle(Vector3 axis, float angle);
+		Vector3 divide(Vector3 v);
+		Vector3 max(Vector3 v);
+		Vector3 clamp(Vector3 min, Vector3 max);
+		float angleTo(Vector3 v);
 		
 }

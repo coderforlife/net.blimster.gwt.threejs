@@ -1,10 +1,10 @@
 class Color
 {
 	
-	package net.blimster.gwt.threejs.core;
+	package net.blimster.gwt.threejs.math;
 	
 	constructors:
-		(int hex);
+		(int value);
 	properties:
 		float r;
 		float g;
@@ -22,5 +22,7 @@ class Color
 		int getHex();
 		string getContextStyle();
 		Color clone();
+		Color set(int value);
+		Color multiply(Color withColor);
 	
 }

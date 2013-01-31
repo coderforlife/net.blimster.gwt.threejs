@@ -20,66 +20,71 @@
  * mail: oliver [dot] damm [at] gmx [dot] de
  * web: http://www.blimster.net 
  */
-package net.blimster.gwt.threejs.renderers;
+package net.blimster.gwt.threejs.math;
 
 import com.google.gwt.core.client.JavaScriptObject;
-import net.blimster.gwt.threejs.math.Color;
-import net.blimster.gwt.threejs.scenes.Scene;
-import net.blimster.gwt.threejs.other.Element;
-import net.blimster.gwt.threejs.cameras.Camera;
+import com.google.gwt.core.client.JsArrayInteger;
+import net.blimster.gwt.threejs.math.Vector3;
+import net.blimster.gwt.threejs.core.Object3D;
+import com.google.gwt.core.client.JsArray;import net.blimster.gwt.threejs.cameras.Camera;
+import net.blimster.gwt.threejs.math.RaycasterIntersect;
 
 /**
  * This file is generated, do not edit.
  */
-public abstract class Renderer extends JavaScriptObject
+public final class Raycaster extends JavaScriptObject
 {
 	
-	protected Renderer()
+	protected Raycaster()
 	{
 		super();
 	}
 	
-		
-	public final native void setDomElement(Element domElement)
-	/*-{
-		
-		this.domElement = domElement;
-		
-	}-*/;
 	
-	public final native Element getDomElement()
+	
+	
+	
+	public static native Raycaster create(Vector3 origin, Vector3 direction)
 	/*-{
 		
-		return this.domElement;
+		return new $wnd.THREE.Raycaster(origin, direction);
 		
 	}-*/;
 	
 	
-	public final native void setSize(int width, int height)
+	public final native void setPrecision(double precision)
 	/*-{
 		
-		this.setSize(width, height);
+		this.precision = precision;
 		
 	}-*/;
 	
-	public final native void setClearColor(Color color, double opacity)
+	public final native double getPrecision()
 	/*-{
 		
-		this.setClearColor(color, opacity);
+		return this.precision;
 		
 	}-*/;
 	
-	public final native void render(Scene scene, Camera camera)
+	
+	public final native Vector3 unprojectVector(Vector3 vector, Camera camera)
 	/*-{
 		
-		this.render(scene, camera);
+		return this.unprojectVector(vector, camera);
 		
 	}-*/;
 	
-	public final native void clear()
+	public final native JsArray<RaycasterIntersect> intersectObject(Object3D object, boolean recursive)
 	/*-{
 		
-		this.clear();
+		return this.intersectObject(object, recursive);
+		
+	}-*/;
+	
+	public final native JsArray<RaycasterIntersect> intersectObjects(JsArray<Object3D> objects, boolean recursive)
+	/*-{
+		
+		return this.intersectObjects(objects, recursive);
 		
 	}-*/;
 	
