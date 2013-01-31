@@ -22,6 +22,7 @@
  */
 package net.blimster.gwt.threejs.materials;
 
+import net.blimster.gwt.threejs.math.Color;
 import net.blimster.gwt.threejs.textures.Texture;
 import net.blimster.gwt.threejs.materials.Material;
 
@@ -61,6 +62,20 @@ public static native MeshLambertMaterial create(int _color, Texture _map)
 		
 	}-*/;
 	
+	
+	public final native void setEmissive(Color emissive)
+	/*-{
+		
+		this.emissive = emissive;
+		
+	}-*/;
+	
+	public final native Color getEmissive()
+	/*-{
+		
+		return this.emissive;
+		
+	}-*/;
 	
 	
 	

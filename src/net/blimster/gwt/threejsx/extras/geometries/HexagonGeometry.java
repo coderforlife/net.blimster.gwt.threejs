@@ -24,9 +24,9 @@ package net.blimster.gwt.threejsx.extras.geometries;
 
 import net.blimster.gwt.threejs.core.Face3;
 import net.blimster.gwt.threejs.core.Geometry;
-import net.blimster.gwt.threejs.core.Matrix4;
-import net.blimster.gwt.threejs.core.UV;
-import net.blimster.gwt.threejs.core.Vector3;
+import net.blimster.gwt.threejs.math.Matrix4;
+import net.blimster.gwt.threejs.math.UV;
+import net.blimster.gwt.threejs.math.Vector3;
 import net.blimster.gwt.threejsx.util.Arrays;
 
 /**
@@ -77,7 +77,7 @@ public final class HexagonGeometry extends Geometry
 	Vector3 normal = Vector3.create();
 	for (int i = 0; i < 4; i++)
 	{
-	    normal.addSelf(result.getFaces().get(i).getNormal());
+	    normal.add(result.getFaces().get(i).getNormal());
 	}
 	normal.normalize();
 

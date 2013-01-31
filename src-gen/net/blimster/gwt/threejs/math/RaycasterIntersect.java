@@ -20,62 +20,96 @@
  * mail: oliver [dot] damm [at] gmx [dot] de
  * web: http://www.blimster.net 
  */
-package net.blimster.gwt.threejs.cameras;
+package net.blimster.gwt.threejs.math;
 
-import net.blimster.gwt.threejs.math.Matrix4;
+import com.google.gwt.core.client.JavaScriptObject;
+import net.blimster.gwt.threejs.math.Vector3;
+import net.blimster.gwt.threejs.core.Face;
 import net.blimster.gwt.threejs.core.Object3D;
 
 /**
  * This file is generated, do not edit.
  */
-public abstract class Camera extends Object3D
+public final class RaycasterIntersect extends JavaScriptObject
 {
 	
-	protected Camera()
+	protected RaycasterIntersect()
 	{
 		super();
 	}
 	
+	
+	
+	
+	
 		
-	public final native void setMatrixWorldInverse(Matrix4 matrixWorldInverse)
+	public final native void setDistance(double distance)
 	/*-{
 		
-		this.matrixWorldInverse = matrixWorldInverse;
+		this.distance = distance;
 		
 	}-*/;
 	
-	public final native Matrix4 getMatrixWorldInverse()
+	public final native double getDistance()
 	/*-{
 		
-		return this.matrixWorldInverse;
+		return this.distance;
 		
 	}-*/;
 	
-	public final native void setProjectionMatrix(Matrix4 projectionMatrix)
+	public final native void setPoint(Vector3 point)
 	/*-{
 		
-		this.projectionMatrix = projectionMatrix;
+		this.point = point;
 		
 	}-*/;
 	
-	public final native Matrix4 getProjectionMatrix()
+	public final native Vector3 getPoint()
 	/*-{
 		
-		return this.projectionMatrix;
+		return this.point;
 		
 	}-*/;
 	
-	public final native void setProjectionMatrixInverse(Matrix4 projectionMatrixInverse)
+	public final native void setFace(Face face)
 	/*-{
 		
-		this.projectionMatrixInverse = projectionMatrixInverse;
+		this.face = face;
 		
 	}-*/;
 	
-	public final native Matrix4 getProjectionMatrixInverse()
+	public final native Face getFace()
 	/*-{
 		
-		return this.projectionMatrixInverse;
+		return this.face;
+		
+	}-*/;
+	
+	public final native void setFaceIndex(int faceIndex)
+	/*-{
+		
+		this.faceIndex = faceIndex;
+		
+	}-*/;
+	
+	public final native int getFaceIndex()
+	/*-{
+		
+		return this.faceIndex;
+		
+	}-*/;
+	
+	public final native void setObject(Object3D object)
+	/*-{
+		
+		this.object = object;
+		
+	}-*/;
+	
+	public final native Object3D getObject()
+	/*-{
+		
+		return this.object;
 		
 	}-*/;
 	

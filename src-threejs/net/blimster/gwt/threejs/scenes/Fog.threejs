@@ -10,4 +10,7 @@ class Fog extends AbstractFog
 	properties:
 		int near;
 		int far;
+		
+	methods:
+		Fog clone();		
 }

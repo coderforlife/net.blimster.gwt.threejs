@@ -5,5 +5,7 @@ class Particle extends Object3D
 	
 	constructors:
 		(Material material);
-	
+
+	methods:
+		Particle clone();	
 }

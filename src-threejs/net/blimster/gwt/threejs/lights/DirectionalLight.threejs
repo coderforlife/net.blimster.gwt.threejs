@@ -4,5 +4,5 @@ class DirectionalLight extends Light
 	package net.blimster.gwt.threejs.lights;
 	
 	constructors:
-		(int hex);
+		(int hex, float intensity, float distance);
 }

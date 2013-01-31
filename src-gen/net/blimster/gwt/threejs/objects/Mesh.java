@@ -24,6 +24,7 @@ package net.blimster.gwt.threejs.objects;
 
 import net.blimster.gwt.threejs.core.Geometry;
 import net.blimster.gwt.threejs.core.Object3D;
+import net.blimster.gwt.threejs.objects.Mesh;
 import net.blimster.gwt.threejs.materials.Material;
 
 /**
@@ -77,6 +78,20 @@ public final class Mesh extends Object3D
 		
 	}-*/;
 	
+	
+	public final native void updateMorphTargets()
+	/*-{
+		
+		this.updateMorphTargets();
+		
+	}-*/;
+	
+	public final native Mesh clone()
+	/*-{
+		
+		return this.clone();
+		
+	}-*/;
 	
 	
 }

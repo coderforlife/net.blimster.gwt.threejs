@@ -25,8 +25,8 @@ package net.blimster.gwt.threejsx.extras.geometries;
 import net.blimster.gwt.threejs.core.Face;
 import net.blimster.gwt.threejs.core.Face4;
 import net.blimster.gwt.threejs.core.Geometry;
-import net.blimster.gwt.threejs.core.UV;
-import net.blimster.gwt.threejs.core.Vector3;
+import net.blimster.gwt.threejs.math.UV;
+import net.blimster.gwt.threejs.math.Vector3;
 import net.blimster.gwt.threejsx.util.Arrays;
 
 import com.google.gwt.core.client.JsArray;

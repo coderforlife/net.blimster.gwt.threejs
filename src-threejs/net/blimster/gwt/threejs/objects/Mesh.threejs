@@ -9,5 +9,8 @@ class Mesh extends Object3D
 	properties:
 		Geometry geomtry;
 		Material material;
-	
+		
+	methods:
+		updateMorphTargets();
+		Mesh clone();
 }

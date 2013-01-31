@@ -23,12 +23,12 @@
 package net.blimster.gwt.threejs.core;
 
 import com.google.gwt.core.client.JavaScriptObject;
-import net.blimster.gwt.threejs.core.Quaternion;
+import net.blimster.gwt.threejs.math.Vector3;
 import com.google.gwt.core.client.JsArrayInteger;
-import net.blimster.gwt.threejs.core.Matrix4;
+import net.blimster.gwt.threejs.math.Matrix4;
+import net.blimster.gwt.threejs.math.Quaternion;
 import net.blimster.gwt.threejs.core.UserObject;
 import net.blimster.gwt.threejs.core.Object3D;
-import net.blimster.gwt.threejs.core.Vector3;
 import com.google.gwt.core.client.JsArray;
 
 /**

@@ -9,4 +9,7 @@ class FogExp2 extends AbstractFog
 
 	properties:
 		float density;
+		
+	methods:
+		FogExp2 clone();
 }

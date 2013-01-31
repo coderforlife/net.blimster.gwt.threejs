@@ -23,7 +23,7 @@
 package net.blimster.gwt.threejs.core;
 
 import com.google.gwt.core.client.JavaScriptObject;
-import net.blimster.gwt.threejs.core.Vector3;
+import net.blimster.gwt.threejs.math.Vector3;
 import net.blimster.gwt.threejs.cameras.Camera;
 
 /**

@@ -5,6 +5,6 @@ class CubeGeometry extends Geometry
 	
 	constructors:
 		(float width, float height, float depth);
-		(float width, float height, float depth, int segmentsWidth, int segmentsHeight, int segmentsDepth, Material[] materials);
+		(float width, float height, float depth, int widthSegments, int heightSegments, int depthSegments);
 	
 }

@@ -23,6 +23,7 @@
 package net.blimster.gwt.threejs.objects;
 
 import net.blimster.gwt.threejs.core.Object3D;
+import net.blimster.gwt.threejs.objects.Particle;
 import net.blimster.gwt.threejs.materials.Material;
 
 /**
@@ -48,6 +49,13 @@ public final class Particle extends Object3D
 	}-*/;
 	
 	
+	
+	public final native Particle clone()
+	/*-{
+		
+		return this.clone();
+		
+	}-*/;
 	
 	
 }

@@ -24,6 +24,7 @@ package net.blimster.gwt.threejs.objects;
 
 import net.blimster.gwt.threejs.core.Geometry;
 import net.blimster.gwt.threejs.core.Object3D;
+import net.blimster.gwt.threejs.objects.Line;
 import net.blimster.gwt.threejs.materials.Material;
 
 /**
@@ -77,6 +78,13 @@ public final class Line extends Object3D
 		
 	}-*/;
 	
+	
+	public final native Line clone()
+	/*-{
+		
+		return this.clone();
+		
+	}-*/;
 	
 	
 }

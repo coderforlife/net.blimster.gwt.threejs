@@ -9,5 +9,7 @@ class Line extends Object3D
 	properties:
 		Geometry geometry;
 		Material material;
-	
+
+	methods:
+		Line clone();	
 }

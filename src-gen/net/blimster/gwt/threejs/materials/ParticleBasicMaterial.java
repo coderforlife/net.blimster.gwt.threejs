@@ -22,7 +22,7 @@
  */
 package net.blimster.gwt.threejs.materials;
 
-import net.blimster.gwt.threejs.core.Color;
+import net.blimster.gwt.threejs.math.Color;
 import net.blimster.gwt.threejs.materials.Material;
 
 /**

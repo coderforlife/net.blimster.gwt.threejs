@@ -1,0 +1,17 @@
+class Raycaster
+{
+	
+	package net.blimster.gwt.threejs.math;
+	
+	constructors:
+		(Vector3 origin, Vector3 direction);
+
+	properties:
+		float precision;
+		
+	methods:
+		Vector3 unprojectVector(Vector3 vector, Camera camera);
+		RaycasterIntersect[] intersectObject(Object3D object, boolean recursive);
+		RaycasterIntersect[] intersectObjects(Object3D[] objects, boolean recursive);
+	
+}

@@ -1,7 +1,7 @@
 class Vector2
 {
 		
-	package net.blimster.gwt.threejs.core;
+	package net.blimster.gwt.threejs.math;
 	
 	constructors:
 		default();
@@ -13,12 +13,14 @@ class Vector2
 		
 	methods:
 		Vector2 set(float x, float y);
+		setComponent(int index, float val);
+		float getComponent(int index);
 		Vector2 copy(Vector2 vector);
 		Vector2 clone();
-		Vector2 add(Vector2 v1, Vector2 v2);
-		Vector2 addSelf(Vector2 v);
-		Vector2 sub(Vector2 v1, Vector2 v2);
-		Vector2 subSelf(Vector2 v);
+		Vector2 add(Vector2 v);
+		Vector2 addVectors(Vector2 v1, Vector2 v2);
+		Vector2 sub(Vector2 v);
+		Vector2 subVectors(Vector2 v1, Vector2 v2);
 		Vector2 multiplyScalar(float s);
 		Vector2 divideScalar(float s);
 		Vector2 negate();
@@ -29,8 +31,8 @@ class Vector2
 		float distanceTo(Vector2 v);
 		float distanceToSquared(Vector2 v);
 		Vector2 setLength(float l);
-		Vector2 lerpSelf(Vector2 v, float alpha);
+		Vector2 lerp(Vector2 v, float alpha);
 		boolean equals(Vector2 v);
-		boolean isZero();
+		Vector2 clamp(Vector2 min, Vector2 max);
 			
 }

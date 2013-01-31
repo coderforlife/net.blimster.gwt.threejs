@@ -22,7 +22,8 @@
  */
 package net.blimster.gwt.threejs.materials;
 
-import net.blimster.gwt.threejs.materials.Material;
+import com.google.gwt.core.client.JsArrayInteger;
+import com.google.gwt.core.client.JsArray;import net.blimster.gwt.threejs.materials.Material;
 
 /**
  * This file is generated, do not edit.
@@ -36,16 +37,17 @@ public final class MeshFaceMaterial extends Material
 	}
 	
 	
-	public static native MeshFaceMaterial create()
+	
+	
+	
+	public static native MeshFaceMaterial create(JsArray<Material> materials)
 	/*-{
 		
-		return new $wnd.THREE.MeshFaceMaterial();
+		return new $wnd.THREE.MeshFaceMaterial(materials);
 		
 	}-*/;
 	
 	
-	
-		
 	
 	
 }

@@ -22,7 +22,7 @@
  */
 package net.blimster.gwt.threejs.scenes;
 
-import net.blimster.gwt.threejs.core.Color;
+import net.blimster.gwt.threejs.math.Color;
 import net.blimster.gwt.threejs.core.Object3D;
 
 /**
