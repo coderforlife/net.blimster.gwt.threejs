@@ -205,10 +205,10 @@ public final class Quaternion extends JavaScriptObject
 		
 	}-*/;
 	
-	public final native Quaternion multiplyMatrices(Quaternion q1, Quaternion q2)
+	public final native Quaternion multiplyQuaternions(Quaternion q1, Quaternion q2)
 	/*-{
 		
-		return this.multiplyMatrices(q1, q2);
+		return this.multiplyQuaternions(q1, q2);
 		
 	}-*/;
 	

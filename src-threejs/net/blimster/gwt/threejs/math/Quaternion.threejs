@@ -27,6 +27,6 @@ class Quaternion
 		float length();
 		Quaternion normalize();
 		Quaternion multiply(Quaternion q);
-		Quaternion multiplyMatrices(Quaternion q1, Quaternion q2);
+		Quaternion multiplyQuaternions(Quaternion q1, Quaternion q2);
 		Quaternion slerpSelf(Vector4 qb, float t);
 }
